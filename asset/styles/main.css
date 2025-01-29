@@ -76,6 +76,11 @@ footer {
 
 .icon {
     width: 3rem;
+
+}
+
+.icon:hover {
+    transform: translateY(-1px);
 }
 
 

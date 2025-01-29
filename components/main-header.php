@@ -3,17 +3,17 @@
 
         <div class="navbar">
             <div class="navlink">
-                <a href="front-page.php">Home</a>
+                <a href="index.php">Home</a>
 
             </div>
 
             <div class="navlink">
-            <a href="home.php">Project</a>
+            <a href="index.php">Project</a>
 
             </div>
 
             <div class="navlink">
-            <a href="about.php">About</a>
+            <a href="index.php">About</a>
 
             </div>
         </div>
