@@ -1,5 +1,5 @@
 <footer>
-        <h1>Let's connect</h1>
+        <h1>Let's connect and grab a coffee ☕️!</h1>
 
         <div class="social">
             <a href=""><img class="icon" src="<?php echo get_stylesheet_directory_uri();?>/asset/images/mail-icon.png" alt="Mail"></a>
