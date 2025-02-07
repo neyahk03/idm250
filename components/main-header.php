@@ -1,5 +1,5 @@
 <header>
-        <h1 class="logo">Yen Luong</h1>
+        <!-- <h1 class="logo">Yen Luong</h1> -->
 
         <div class="header__logo">
             <?php if (has_custom_logo()) : ?>
