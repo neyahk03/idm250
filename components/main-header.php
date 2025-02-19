@@ -9,24 +9,6 @@
             <?php endif; ?>
         </div>
 
-        <!-- <div class="navbar">
-            <div class="navlink">
-                <a href="index.php">Home</a>
-
-            </div>
-
-            <div class="navlink">
-            <a href="index.php">Project</a>
-
-            </div>
-
-            <div class="navlink">
-            <a href="index.php">About</a>
-
-            </div>
-
-            
-        </div> -->
 
         <?php 
                 wp_nav_menu([

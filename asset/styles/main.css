@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -386,6 +385,40 @@ li::marker {
     }
 }
 
+/* page.php css */
+.wrapper {
+    font-size: 1.25rem;
+
+    
+
+    .wp-block-columns {
+        margin: 0 5rem;
+    }
+
+    .wp-block-columns .wp-block-heading {
+        text-align: left;
+    }
+
+}
+
+.wrapper p {
+        
+    a {
+    
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.wp-block-columns .wp-block-image {
+    padding: 0;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        border-radius: 1.5rem;
+    }
+}
 
 
 @media screen and (max-width: 850px) {
@@ -431,9 +464,38 @@ li::marker {
         flex-direction: column;
         padding: 1.5rem 2rem;
         margin: 1rem;
+        margin-bottom: 5rem;
         gap: 1rem;
         
         
+    }
+
+    /* page-content */
+
+    .wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper .wp-block-columns {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+        .wp-block-heading {
+            text-align: center;
+        }
+
+        .wp-block-buttons {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .wrapper .wp-block-heading {
+        text-align: center;
     }
     
 
