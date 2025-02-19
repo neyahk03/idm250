@@ -339,6 +339,54 @@ li::marker {
 }
 
 
+.error-page { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: calc(100vh - 20rem);
+    justify-content: center;
+
+    z-index: 100;
+
+    h1 {
+        font-size: 3rem;   
+        margin: 0;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .home-button {
+        display: inline-block;
+        padding: 1rem;
+        margin: 0 auto;
+        border-radius: 0.4rem;
+        border: 1px solid black;
+
+        font-weight: 900;
+
+        color: black;
+        text-decoration: none;
+
+        transition: box-shadow ease 0.2s;
+
+    }
+
+    .home-button:hover {
+        box-shadow: 3px 3px 0px var(--pink);
+    }
+
+    .home-button:visited {
+        color: black;
+    }
+
+    .star {
+        position: absolute;
+    }
+}
+
+
 
 @media screen and (max-width: 850px) {
     .post-meta {
