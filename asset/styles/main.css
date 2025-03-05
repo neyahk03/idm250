@@ -386,8 +386,32 @@ li::marker {
 }
 
 /* page.php css */
-.wrapper {
+.page-template-default .featured-image {
+    width: 100%;
+
+
+    img {
+        width: 100%;
+        height: auto;    
+        border-radius: 1.5rem;
+
+    }
+}
+
+.page-template-default .wp-block-pullquote {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+
+.page-template-default .wrapper {
     font-size: 1.25rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 0 2rem;
+    margin-top: 2rem;
 
     
 
@@ -401,7 +425,7 @@ li::marker {
 
 }
 
-.wrapper p {
+.page-template-default .wrapper p {
         
     a {
     
@@ -410,7 +434,7 @@ li::marker {
     }
 }
 
-.wp-block-columns .wp-block-image {
+.page-template-default .wp-block-columns .wp-block-image {
     padding: 0;
     overflow: hidden;
 
@@ -420,6 +444,97 @@ li::marker {
     }
 }
 
+/* archive.php */
+.archive .title-section {
+    background-color: var(--pink);
+    height: 25vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.archive .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin: 4rem 5rem;
+    gap: 2rem;
+}
+
+
+
+.archive .grid-item {
+    
+    border: 1px solid black;
+    border-radius: 1.4rem;
+    overflow: hidden;
+    height: 30rem;
+
+    transition: transform 0.3s ease;
+
+    display: grid;
+    grid-template-columns:  1fr;
+
+
+}
+
+
+.archive .grid-item:hover {
+    transform: scale(1.03);
+}
+
+.blog-card__link {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+
+.archive .blog-card__image-wrapper {
+    width: auto;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+
+    }
+}
+
+.archive h3.blog-card__title {
+    margin: 0;
+    margin-top: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.archive .blog-card__content{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-card__category-name {
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .archive .grid-item {
+
+        grid-template-columns: 1fr;
+
+    }
+}
 
 @media screen and (max-width: 850px) {
     .post-meta {
@@ -496,6 +611,13 @@ li::marker {
 
     .wrapper .wp-block-heading {
         text-align: center;
+    }
+
+    .archive .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2rem;
+        grid-gap: 2rem;
     }
     
 

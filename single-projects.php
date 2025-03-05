@@ -4,8 +4,16 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <article class="post">
             <h1 class="post-title"><?php the_title(); ?></h1>
-            <p class="post-meta">Published on <?php the_date(); ?> in <?php the_category(', '); ?></p>
-            
+
+            <p class="post-meta"><strong>Project Categories:</strong>
+                <?php echo get_the_term_list(
+                    get_the_ID(), // 204
+                    'project-categories', // taxonomy name
+                    '', // before
+                    ', ', // separator
+                    '' // after
+                ); ?>
+            </p>
             <?php if (has_post_thumbnail()) : ?>
                 <div class="post-thumbnail">
                     <?php the_post_thumbnail(); ?>
