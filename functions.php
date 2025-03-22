@@ -79,11 +79,12 @@ function mytheme_customize_register($wp_customize)
         'primary_color' => [
             'label' => __('Primary Color', 'mytheme'),
             'default' => '#FFCBD4'
-        ] 
-        // 'secondary_color' => [
-        //     'label' => __('Secondary Color', 'mytheme'),
-        //     'default' => '#0066ff'
-        // ]
+        ],
+        
+        'secondary_color' => [
+            'label' => __('Secondary Color', 'mytheme'),
+            'default' => '#dedede'
+        ]
     ];
 
     // Loop through colors to add settings and controls

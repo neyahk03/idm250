@@ -31,6 +31,10 @@
     <?php endwhile; endif; ?>
 </main>
 
+<section class="wrapper related-post">
+  <?php get_template_part('components/related-projects'); ?>
+</section>
+
 <?php get_footer(); ?>
 
 

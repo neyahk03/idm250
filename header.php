@@ -9,6 +9,7 @@
         bloginfo('name'); 
         ?>
     </title>
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
     <?php wp_head(); ?>
 </head>
 
